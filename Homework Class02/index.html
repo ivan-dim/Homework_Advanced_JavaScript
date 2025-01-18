@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class2HW</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Class2HW</h1>
+      <label for="title">Title:</label>
+      <input type="text" id="title" />
+
+      <label for="priority">Priority:</label>
+      <select id="priority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+        <option value="veryHigh">Very High</option>
+      </select>
+
+      <label for="color">Color:</label>
+      <input type="color" id="color" value="#ffffff">
+
+      <label for="description">Description:</label>
+      <textarea id="description"></textarea>
+
+      <button onclick="addReminder()">Add Reminder</button>
+      <button onclick="showReminders()">Show All Reminders</button>
+
+      <table id="reminderTable">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Priority</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody id="reminderTableBody"></tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
