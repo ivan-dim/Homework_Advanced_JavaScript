@@ -6,9 +6,7 @@ async function getData() {
     let students = await response.json();
     let fullNames = await getStudentFullName(students);
     //TODO: get documents & sort them
-    let docResponse = await fetch(
-      "https://raw.githubusercontent.com/sedc-codecademy/skwd9-04-ajs/main/Samples/documents.json"
-    );
+    let docResponse = await fetch("https://raw.githubusercontent.com/sedc-codecademy/skwd9-04-ajs/main/Samples/documents.json");
     let documents = await docResponse.json();
     let sortedDocuments = await getSortedDocuments(documents);
   } catch {
